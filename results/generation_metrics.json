@@ -1,0 +1,1371 @@
+{
+  "protocol": "Next action from the recorded human prefix and current screenshot",
+  "split": "val",
+  "num_trajectories": 20,
+  "num_prefixes": 297,
+  "cached_generation": true,
+  "cache_check": {
+    "compared_tokens": 103,
+    "max_total_variation": 0.0489124171435833
+  },
+  "checkpoints": {
+    "checkpoint-20": "runs/trajectory-epoch1-160/checkpoint-20",
+    "checkpoint-40": "runs/trajectory-epoch1-160/checkpoint-40"
+  },
+  "sampling": {
+    "samples_per_prefix": 3,
+    "seed": 42,
+    "do_sample": true,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_new_tokens": 256
+  },
+  "thresholds": {
+    "position_tolerance": 0.05,
+    "scroll_tolerance": 0.25,
+    "scroll_deadzone_pixels": 1.0
+  },
+  "elapsed_seconds": 2750.900538700007,
+  "models": {
+    "base": {
+      "count": 891,
+      "parse_valid_rate": 0.6487093153759821,
+      "type_accuracy": 0.4051627384960718,
+      "macro_type_accuracy": 0.2800331825747427,
+      "complete_match_rate": 0.005611672278338945,
+      "joint_match_rate": 0.07519640852974187,
+      "type_match_count": 361,
+      "parameters_given_type_match": {
+        "parameters_valid": {
+          "mean": 0.8559556786703602,
+          "count": 361
+        },
+        "scroll_direction_match": {
+          "mean": 0.5185185185185185,
+          "count": 162
+        },
+        "scroll_vector_error_normalized": {
+          "mean": 0.501335845244393,
+          "count": 162
+        },
+        "scroll_magnitude_error_normalized": {
+          "mean": 0.2410309678453643,
+          "count": 162
+        },
+        "scroll_amount_match": {
+          "mean": 0.6975308641975309,
+          "count": 162
+        },
+        "scroll_vector_match": {
+          "mean": 0.3888888888888889,
+          "count": 162
+        },
+        "scroll_magnitude_squared_error_normalized": {
+          "mean": 0.12296610449397351,
+          "count": 162
+        },
+        "text_exact_match": {
+          "mean": 0.10714285714285714,
+          "count": 28
+        },
+        "text_similarity": {
+          "mean": 0.3365512334640818,
+          "count": 28
+        },
+        "position_error_pixels": {
+          "mean": 227.91254347022274,
+          "count": 179
+        },
+        "position_error_normalized": {
+          "mean": 0.23440920855891734,
+          "count": 179
+        },
+        "position_match": {
+          "mean": 0.29608938547486036,
+          "count": 179
+        },
+        "button_match": {
+          "mean": 1.0,
+          "count": 117
+        },
+        "key_match": {
+          "mean": 1.0,
+          "count": 2
+        },
+        "message_kind_match": {
+          "mean": 0.0,
+          "count": 12
+        }
+      },
+      "per_type": {
+        "scroll": {
+          "count": 198,
+          "type_accuracy": 0.5050505050505051,
+          "joint_match_rate": 0.18686868686868688,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 100
+            },
+            "scroll_direction_match": {
+              "mean": 0.45,
+              "count": 100
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.5192811983655459,
+              "count": 100
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.21804791587387196,
+              "count": 100
+            },
+            "scroll_amount_match": {
+              "mean": 0.74,
+              "count": 100
+            },
+            "scroll_vector_match": {
+              "mean": 0.38,
+              "count": 100
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.09457373867715153,
+              "count": 100
+            }
+          },
+          "prefix_count": 66,
+          "any_type_match_rate": 0.6666666666666666,
+          "any_joint_match_rate": 0.30303030303030304,
+          "valid_same_type_count": 100,
+          "valid_same_type_prefix_count": 44
+        },
+        "mouse_click": {
+          "count": 345,
+          "type_accuracy": 0.4434782608695652,
+          "joint_match_rate": 0.011594202898550725,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.7647058823529411,
+              "count": 153
+            },
+            "position_error_pixels": {
+              "mean": 325.4212863491123,
+              "count": 117
+            },
+            "position_error_normalized": {
+              "mean": 0.3325530787421256,
+              "count": 117
+            },
+            "position_match": {
+              "mean": 0.03418803418803419,
+              "count": 117
+            },
+            "button_match": {
+              "mean": 1.0,
+              "count": 117
+            }
+          },
+          "prefix_count": 115,
+          "any_type_match_rate": 0.6956521739130435,
+          "any_joint_match_rate": 0.034782608695652174,
+          "valid_same_type_count": 117,
+          "valid_same_type_prefix_count": 69
+        },
+        "send_msg_to_user": {
+          "count": 120,
+          "type_accuracy": 0.1,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 12
+            },
+            "text_exact_match": {
+              "mean": 0.0,
+              "count": 12
+            },
+            "text_similarity": {
+              "mean": 0.053874221577234954,
+              "count": 12
+            },
+            "message_kind_match": {
+              "mean": 0.0,
+              "count": 12
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.2,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 12,
+          "valid_same_type_prefix_count": 8
+        },
+        "keyboard_type": {
+          "count": 51,
+          "type_accuracy": 0.6274509803921569,
+          "joint_match_rate": 0.058823529411764705,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.5,
+              "count": 32
+            },
+            "text_exact_match": {
+              "mean": 0.1875,
+              "count": 16
+            },
+            "text_similarity": {
+              "mean": 0.5485589923792169,
+              "count": 16
+            }
+          },
+          "prefix_count": 17,
+          "any_type_match_rate": 0.8823529411764706,
+          "any_joint_match_rate": 0.058823529411764705,
+          "valid_same_type_count": 16,
+          "valid_same_type_prefix_count": 8
+        },
+        "keyboard_press": {
+          "count": 42,
+          "type_accuracy": 0.047619047619047616,
+          "joint_match_rate": 0.047619047619047616,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 2
+            },
+            "key_match": {
+              "mean": 1.0,
+              "count": 2
+            }
+          },
+          "prefix_count": 14,
+          "any_type_match_rate": 0.07142857142857142,
+          "any_joint_match_rate": 0.07142857142857142,
+          "valid_same_type_count": 2,
+          "valid_same_type_prefix_count": 1
+        },
+        "scroll_at": {
+          "count": 120,
+          "type_accuracy": 0.5166666666666667,
+          "joint_match_rate": 0.175,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 62
+            },
+            "position_error_pixels": {
+              "mean": 43.90410932780166,
+              "count": 62
+            },
+            "position_error_normalized": {
+              "mean": 0.049202227729314964,
+              "count": 62
+            },
+            "position_match": {
+              "mean": 0.7903225806451613,
+              "count": 62
+            },
+            "scroll_direction_match": {
+              "mean": 0.6290322580645161,
+              "count": 62
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.47239172730705076,
+              "count": 62
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.27810040650906187,
+              "count": 62
+            },
+            "scroll_amount_match": {
+              "mean": 0.6290322580645161,
+              "count": 62
+            },
+            "scroll_vector_match": {
+              "mean": 0.4032258064516129,
+              "count": 62
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.16876024290820246,
+              "count": 62
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.65,
+          "any_joint_match_rate": 0.3,
+          "valid_same_type_count": 62,
+          "valid_same_type_prefix_count": 26
+        },
+        "goto": {
+          "count": 9,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 3,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        },
+        "mouse_drag_and_drop": {
+          "count": 6,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 2,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        }
+      },
+      "prefix_count": 297,
+      "any_type_match_rate": 0.5858585858585859,
+      "any_joint_match_rate": 0.12794612794612795,
+      "valid_same_type_count": 309,
+      "valid_same_type_prefix_count": 156
+    },
+    "checkpoint-20": {
+      "count": 891,
+      "parse_valid_rate": 0.6711560044893379,
+      "type_accuracy": 0.40291806958473625,
+      "macro_type_accuracy": 0.3109926562851755,
+      "complete_match_rate": 0.052749719416386086,
+      "joint_match_rate": 0.14590347923681257,
+      "type_match_count": 359,
+      "parameters_given_type_match": {
+        "parameters_valid": {
+          "mean": 0.9637883008356546,
+          "count": 359
+        },
+        "scroll_direction_match": {
+          "mean": 0.7610062893081762,
+          "count": 159
+        },
+        "scroll_vector_error_normalized": {
+          "mean": 0.4393641479773871,
+          "count": 159
+        },
+        "scroll_magnitude_error_normalized": {
+          "mean": 0.2906594046910055,
+          "count": 159
+        },
+        "scroll_amount_match": {
+          "mean": 0.6352201257861635,
+          "count": 159
+        },
+        "scroll_vector_match": {
+          "mean": 0.5345911949685535,
+          "count": 159
+        },
+        "scroll_magnitude_squared_error_normalized": {
+          "mean": 0.20402768665332463,
+          "count": 159
+        },
+        "text_exact_match": {
+          "mean": 0.5147058823529411,
+          "count": 68
+        },
+        "text_similarity": {
+          "mean": 0.7235717226394393,
+          "count": 68
+        },
+        "message_kind_match": {
+          "mean": 0.6296296296296297,
+          "count": 54
+        },
+        "key_match": {
+          "mean": 0.7142857142857143,
+          "count": 14
+        },
+        "position_error_pixels": {
+          "mean": 219.92422041558933,
+          "count": 168
+        },
+        "position_error_normalized": {
+          "mean": 0.2357467356464682,
+          "count": 168
+        },
+        "position_match": {
+          "mean": 0.3333333333333333,
+          "count": 168
+        },
+        "button_match": {
+          "mean": 0.9809523809523809,
+          "count": 105
+        }
+      },
+      "per_type": {
+        "scroll": {
+          "count": 198,
+          "type_accuracy": 0.4898989898989899,
+          "joint_match_rate": 0.2474747474747475,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9896907216494846,
+              "count": 97
+            },
+            "scroll_direction_match": {
+              "mean": 0.75,
+              "count": 96
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.43751821115640593,
+              "count": 96
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.2866986424667514,
+              "count": 96
+            },
+            "scroll_amount_match": {
+              "mean": 0.625,
+              "count": 96
+            },
+            "scroll_vector_match": {
+              "mean": 0.5104166666666666,
+              "count": 96
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.1895592913743507,
+              "count": 96
+            }
+          },
+          "prefix_count": 66,
+          "any_type_match_rate": 0.6515151515151515,
+          "any_joint_match_rate": 0.4090909090909091,
+          "valid_same_type_count": 96,
+          "valid_same_type_prefix_count": 42
+        },
+        "mouse_click": {
+          "count": 345,
+          "type_accuracy": 0.3188405797101449,
+          "joint_match_rate": 0.014492753623188406,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9545454545454546,
+              "count": 110
+            },
+            "position_error_pixels": {
+              "mean": 321.21393070471515,
+              "count": 105
+            },
+            "position_error_normalized": {
+              "mean": 0.3429399016989834,
+              "count": 105
+            },
+            "position_match": {
+              "mean": 0.047619047619047616,
+              "count": 105
+            },
+            "button_match": {
+              "mean": 0.9809523809523809,
+              "count": 105
+            }
+          },
+          "prefix_count": 115,
+          "any_type_match_rate": 0.5652173913043478,
+          "any_joint_match_rate": 0.043478260869565216,
+          "valid_same_type_count": 105,
+          "valid_same_type_prefix_count": 61
+        },
+        "send_msg_to_user": {
+          "count": 120,
+          "type_accuracy": 0.48333333333333334,
+          "joint_match_rate": 0.25833333333333336,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9310344827586207,
+              "count": 58
+            },
+            "text_exact_match": {
+              "mean": 0.5740740740740741,
+              "count": 54
+            },
+            "text_similarity": {
+              "mean": 0.7104516622908585,
+              "count": 54
+            },
+            "message_kind_match": {
+              "mean": 0.6296296296296297,
+              "count": 54
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.7,
+          "any_joint_match_rate": 0.45,
+          "valid_same_type_count": 54,
+          "valid_same_type_prefix_count": 25
+        },
+        "keyboard_type": {
+          "count": 51,
+          "type_accuracy": 0.3137254901960784,
+          "joint_match_rate": 0.0784313725490196,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.875,
+              "count": 16
+            },
+            "text_exact_match": {
+              "mean": 0.2857142857142857,
+              "count": 14
+            },
+            "text_similarity": {
+              "mean": 0.7741776696982507,
+              "count": 14
+            }
+          },
+          "prefix_count": 17,
+          "any_type_match_rate": 0.5294117647058824,
+          "any_joint_match_rate": 0.11764705882352941,
+          "valid_same_type_count": 14,
+          "valid_same_type_prefix_count": 8
+        },
+        "keyboard_press": {
+          "count": 42,
+          "type_accuracy": 0.35714285714285715,
+          "joint_match_rate": 0.23809523809523808,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9333333333333333,
+              "count": 15
+            },
+            "key_match": {
+              "mean": 0.7142857142857143,
+              "count": 14
+            }
+          },
+          "prefix_count": 14,
+          "any_type_match_rate": 0.6428571428571429,
+          "any_joint_match_rate": 0.42857142857142855,
+          "valid_same_type_count": 14,
+          "valid_same_type_prefix_count": 9
+        },
+        "scroll_at": {
+          "count": 120,
+          "type_accuracy": 0.525,
+          "joint_match_rate": 0.25833333333333336,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 63
+            },
+            "position_error_pixels": {
+              "mean": 51.10803660037954,
+              "count": 63
+            },
+            "position_error_normalized": {
+              "mean": 0.05709145889227621,
+              "count": 63
+            },
+            "position_match": {
+              "mean": 0.8095238095238095,
+              "count": 63
+            },
+            "scroll_direction_match": {
+              "mean": 0.7777777777777778,
+              "count": 63
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.4421770040855489,
+              "count": 63
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.29669485188986894,
+              "count": 63
+            },
+            "scroll_amount_match": {
+              "mean": 0.6507936507936508,
+              "count": 63
+            },
+            "scroll_vector_match": {
+              "mean": 0.5714285714285714,
+              "count": 63
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.22607476517366587,
+              "count": 63
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.7,
+          "any_joint_match_rate": 0.4,
+          "valid_same_type_count": 63,
+          "valid_same_type_prefix_count": 28
+        },
+        "goto": {
+          "count": 9,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 3,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        },
+        "mouse_drag_and_drop": {
+          "count": 6,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 2,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        }
+      },
+      "prefix_count": 297,
+      "any_type_match_rate": 0.6127946127946128,
+      "any_joint_match_rate": 0.24915824915824916,
+      "valid_same_type_count": 346,
+      "valid_same_type_prefix_count": 173
+    },
+    "checkpoint-40": {
+      "count": 891,
+      "parse_valid_rate": 0.8967452300785634,
+      "type_accuracy": 0.4624017957351291,
+      "macro_type_accuracy": 0.373765467979023,
+      "complete_match_rate": 0.08978675645342311,
+      "joint_match_rate": 0.19640852974186307,
+      "type_match_count": 412,
+      "parameters_given_type_match": {
+        "parameters_valid": {
+          "mean": 0.9830097087378641,
+          "count": 412
+        },
+        "scroll_direction_match": {
+          "mean": 0.7572254335260116,
+          "count": 173
+        },
+        "scroll_vector_error_normalized": {
+          "mean": 0.3616631484380241,
+          "count": 173
+        },
+        "scroll_magnitude_error_normalized": {
+          "mean": 0.23549589892996978,
+          "count": 173
+        },
+        "scroll_amount_match": {
+          "mean": 0.6820809248554913,
+          "count": 173
+        },
+        "scroll_vector_match": {
+          "mean": 0.5664739884393064,
+          "count": 173
+        },
+        "scroll_magnitude_squared_error_normalized": {
+          "mean": 0.11566910080767866,
+          "count": 173
+        },
+        "text_exact_match": {
+          "mean": 0.6470588235294118,
+          "count": 102
+        },
+        "text_similarity": {
+          "mean": 0.8235435691631775,
+          "count": 102
+        },
+        "message_kind_match": {
+          "mean": 0.9333333333333333,
+          "count": 75
+        },
+        "position_error_pixels": {
+          "mean": 210.1645464780198,
+          "count": 179
+        },
+        "position_error_normalized": {
+          "mean": 0.22183177631562215,
+          "count": 179
+        },
+        "position_match": {
+          "mean": 0.3240223463687151,
+          "count": 179
+        },
+        "button_match": {
+          "mean": 0.9827586206896551,
+          "count": 116
+        },
+        "key_match": {
+          "mean": 0.8571428571428571,
+          "count": 14
+        }
+      },
+      "per_type": {
+        "scroll": {
+          "count": 198,
+          "type_accuracy": 0.5656565656565656,
+          "joint_match_rate": 0.29292929292929293,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9821428571428571,
+              "count": 112
+            },
+            "scroll_direction_match": {
+              "mean": 0.7272727272727273,
+              "count": 110
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.3699763451217573,
+              "count": 110
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.23537719141210744,
+              "count": 110
+            },
+            "scroll_amount_match": {
+              "mean": 0.6818181818181818,
+              "count": 110
+            },
+            "scroll_vector_match": {
+              "mean": 0.5363636363636364,
+              "count": 110
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.10661977770804518,
+              "count": 110
+            }
+          },
+          "prefix_count": 66,
+          "any_type_match_rate": 0.7878787878787878,
+          "any_joint_match_rate": 0.4696969696969697,
+          "valid_same_type_count": 110,
+          "valid_same_type_prefix_count": 51
+        },
+        "mouse_click": {
+          "count": 345,
+          "type_accuracy": 0.336231884057971,
+          "joint_match_rate": 0.02318840579710145,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 116
+            },
+            "position_error_pixels": {
+              "mean": 298.48138513787484,
+              "count": 116
+            },
+            "position_error_normalized": {
+              "mean": 0.3143016973470262,
+              "count": 116
+            },
+            "position_match": {
+              "mean": 0.06896551724137931,
+              "count": 116
+            },
+            "button_match": {
+              "mean": 0.9827586206896551,
+              "count": 116
+            }
+          },
+          "prefix_count": 115,
+          "any_type_match_rate": 0.5739130434782609,
+          "any_joint_match_rate": 0.05217391304347826,
+          "valid_same_type_count": 116,
+          "valid_same_type_prefix_count": 66
+        },
+        "send_msg_to_user": {
+          "count": 120,
+          "type_accuracy": 0.6416666666666667,
+          "joint_match_rate": 0.475,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.974025974025974,
+              "count": 77
+            },
+            "text_exact_match": {
+              "mean": 0.76,
+              "count": 75
+            },
+            "text_similarity": {
+              "mean": 0.8533148312262622,
+              "count": 75
+            },
+            "message_kind_match": {
+              "mean": 0.9333333333333333,
+              "count": 75
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.825,
+          "any_joint_match_rate": 0.5,
+          "valid_same_type_count": 75,
+          "valid_same_type_prefix_count": 32
+        },
+        "keyboard_type": {
+          "count": 51,
+          "type_accuracy": 0.5882352941176471,
+          "joint_match_rate": 0.17647058823529413,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 0.9,
+              "count": 30
+            },
+            "text_exact_match": {
+              "mean": 0.3333333333333333,
+              "count": 27
+            },
+            "text_similarity": {
+              "mean": 0.7408456189879423,
+              "count": 27
+            }
+          },
+          "prefix_count": 17,
+          "any_type_match_rate": 0.8823529411764706,
+          "any_joint_match_rate": 0.35294117647058826,
+          "valid_same_type_count": 27,
+          "valid_same_type_prefix_count": 15
+        },
+        "keyboard_press": {
+          "count": 42,
+          "type_accuracy": 0.3333333333333333,
+          "joint_match_rate": 0.2857142857142857,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 14
+            },
+            "key_match": {
+              "mean": 0.8571428571428571,
+              "count": 14
+            }
+          },
+          "prefix_count": 14,
+          "any_type_match_rate": 0.5714285714285714,
+          "any_joint_match_rate": 0.5,
+          "valid_same_type_count": 14,
+          "valid_same_type_prefix_count": 8
+        },
+        "scroll_at": {
+          "count": 120,
+          "type_accuracy": 0.525,
+          "joint_match_rate": 0.25833333333333336,
+          "parameters_given_type_match": {
+            "parameters_valid": {
+              "mean": 1.0,
+              "count": 63
+            },
+            "position_error_pixels": {
+              "mean": 47.54941497733426,
+              "count": 63
+            },
+            "position_error_normalized": {
+              "mean": 0.051569699495894,
+              "count": 63
+            },
+            "position_match": {
+              "mean": 0.7936507936507936,
+              "count": 63
+            },
+            "scroll_direction_match": {
+              "mean": 0.8095238095238095,
+              "count": 63
+            },
+            "scroll_vector_error_normalized": {
+              "mean": 0.34714804311722,
+              "count": 63
+            },
+            "scroll_magnitude_error_normalized": {
+              "mean": 0.23570316602464988,
+              "count": 63
+            },
+            "scroll_amount_match": {
+              "mean": 0.6825396825396826,
+              "count": 63
+            },
+            "scroll_vector_match": {
+              "mean": 0.6190476190476191,
+              "count": 63
+            },
+            "scroll_magnitude_squared_error_normalized": {
+              "mean": 0.1314695062197372,
+              "count": 63
+            }
+          },
+          "prefix_count": 40,
+          "any_type_match_rate": 0.7,
+          "any_joint_match_rate": 0.375,
+          "valid_same_type_count": 63,
+          "valid_same_type_prefix_count": 28
+        },
+        "goto": {
+          "count": 9,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 3,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        },
+        "mouse_drag_and_drop": {
+          "count": 6,
+          "type_accuracy": 0.0,
+          "joint_match_rate": 0.0,
+          "parameters_given_type_match": {},
+          "prefix_count": 2,
+          "any_type_match_rate": 0.0,
+          "any_joint_match_rate": 0.0,
+          "valid_same_type_count": 0,
+          "valid_same_type_prefix_count": 0
+        }
+      },
+      "prefix_count": 297,
+      "any_type_match_rate": 0.6801346801346801,
+      "any_joint_match_rate": 0.28619528619528617,
+      "valid_same_type_count": 405,
+      "valid_same_type_prefix_count": 200
+    }
+  },
+  "shared_prefix_parameters": {
+    "goto": {},
+    "keyboard_press": {
+      "key_match": {
+        "prefix_count": 1,
+        "models": {
+          "base": {
+            "mean": 1.0,
+            "sample_count": 2
+          },
+          "checkpoint-20": {
+            "mean": 1.0,
+            "sample_count": 3
+          },
+          "checkpoint-40": {
+            "mean": 1.0,
+            "sample_count": 3
+          }
+        }
+      }
+    },
+    "keyboard_type": {
+      "text_exact_match": {
+        "prefix_count": 5,
+        "models": {
+          "base": {
+            "mean": 0.2,
+            "sample_count": 11
+          },
+          "checkpoint-20": {
+            "mean": 0.2,
+            "sample_count": 11
+          },
+          "checkpoint-40": {
+            "mean": 0.2,
+            "sample_count": 10
+          }
+        }
+      },
+      "text_similarity": {
+        "prefix_count": 5,
+        "models": {
+          "base": {
+            "mean": 0.5647222222222222,
+            "sample_count": 11
+          },
+          "checkpoint-20": {
+            "mean": 0.6499823633156966,
+            "sample_count": 11
+          },
+          "checkpoint-40": {
+            "mean": 0.6499823633156966,
+            "sample_count": 10
+          }
+        }
+      }
+    },
+    "mouse_click": {
+      "button_match": {
+        "prefix_count": 44,
+        "models": {
+          "base": {
+            "mean": 1.0,
+            "sample_count": 82
+          },
+          "checkpoint-20": {
+            "mean": 0.9772727272727273,
+            "sample_count": 82
+          },
+          "checkpoint-40": {
+            "mean": 0.9772727272727273,
+            "sample_count": 84
+          }
+        }
+      },
+      "position_error_normalized": {
+        "prefix_count": 44,
+        "models": {
+          "base": {
+            "mean": 0.36490427190508046,
+            "sample_count": 82
+          },
+          "checkpoint-20": {
+            "mean": 0.3895465669104968,
+            "sample_count": 82
+          },
+          "checkpoint-40": {
+            "mean": 0.36503147519243623,
+            "sample_count": 84
+          }
+        }
+      },
+      "position_error_pixels": {
+        "prefix_count": 44,
+        "models": {
+          "base": {
+            "mean": 360.1845230800893,
+            "sample_count": 82
+          },
+          "checkpoint-20": {
+            "mean": 368.9864059276413,
+            "sample_count": 82
+          },
+          "checkpoint-40": {
+            "mean": 345.4122417114682,
+            "sample_count": 84
+          }
+        }
+      },
+      "position_match": {
+        "prefix_count": 44,
+        "models": {
+          "base": {
+            "mean": 0.011363636363636364,
+            "sample_count": 82
+          },
+          "checkpoint-20": {
+            "mean": 0.03787878787878787,
+            "sample_count": 82
+          },
+          "checkpoint-40": {
+            "mean": 0.04924242424242424,
+            "sample_count": 84
+          }
+        }
+      }
+    },
+    "mouse_drag_and_drop": {},
+    "scroll": {
+      "scroll_amount_match": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.7051282051282052,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.6068376068376069,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.6538461538461539,
+            "sample_count": 91
+          }
+        }
+      },
+      "scroll_direction_match": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.4273504273504274,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.7393162393162392,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.7521367521367521,
+            "sample_count": 91
+          }
+        }
+      },
+      "scroll_magnitude_error_normalized": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.22185049431561255,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.28668133628532666,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.24169749747230868,
+            "sample_count": 91
+          }
+        }
+      },
+      "scroll_magnitude_squared_error_normalized": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.09939666375930983,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.18406231929478442,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.11732077201361889,
+            "sample_count": 91
+          }
+        }
+      },
+      "scroll_vector_error_normalized": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.5297242678095082,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.44690555793850917,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.3927693866195742,
+            "sample_count": 91
+          }
+        }
+      },
+      "scroll_vector_match": {
+        "prefix_count": 39,
+        "models": {
+          "base": {
+            "mean": 0.32051282051282054,
+            "sample_count": 92
+          },
+          "checkpoint-20": {
+            "mean": 0.4914529914529915,
+            "sample_count": 93
+          },
+          "checkpoint-40": {
+            "mean": 0.5427350427350428,
+            "sample_count": 91
+          }
+        }
+      }
+    },
+    "scroll_at": {
+      "position_error_normalized": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.06403309622063709,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.08634885504281234,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.06918080035236343,
+            "sample_count": 61
+          }
+        }
+      },
+      "position_error_pixels": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 58.65418428287486,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 76.96595999722443,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 61.050622327613766,
+            "sample_count": 61
+          }
+        }
+      },
+      "position_match": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.7628205128205128,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.7692307692307693,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.717948717948718,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_amount_match": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.6794871794871795,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.6025641025641025,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.6474358974358974,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_direction_match": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.5897435897435898,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.7435897435897435,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.8012820512820512,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_magnitude_error_normalized": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.2462088627285532,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.34434490273290985,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.24846975300805016,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_magnitude_squared_error_normalized": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.14017725280301452,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.31116834125115567,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.13684845058369868,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_vector_error_normalized": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.4668181794268822,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.5177844109994754,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.38844318232218444,
+            "sample_count": 61
+          }
+        }
+      },
+      "scroll_vector_match": {
+        "prefix_count": 26,
+        "models": {
+          "base": {
+            "mean": 0.40384615384615385,
+            "sample_count": 62
+          },
+          "checkpoint-20": {
+            "mean": 0.5192307692307693,
+            "sample_count": 61
+          },
+          "checkpoint-40": {
+            "mean": 0.5961538461538461,
+            "sample_count": 61
+          }
+        }
+      }
+    },
+    "send_msg_to_user": {
+      "message_kind_match": {
+        "prefix_count": 8,
+        "models": {
+          "base": {
+            "mean": 0.0,
+            "sample_count": 12
+          },
+          "checkpoint-20": {
+            "mean": 0.7291666666666666,
+            "sample_count": 21
+          },
+          "checkpoint-40": {
+            "mean": 1.0,
+            "sample_count": 24
+          }
+        }
+      },
+      "text_exact_match": {
+        "prefix_count": 8,
+        "models": {
+          "base": {
+            "mean": 0.0,
+            "sample_count": 12
+          },
+          "checkpoint-20": {
+            "mean": 0.7291666666666666,
+            "sample_count": 21
+          },
+          "checkpoint-40": {
+            "mean": 1.0,
+            "sample_count": 24
+          }
+        }
+      },
+      "text_similarity": {
+        "prefix_count": 8,
+        "models": {
+          "base": {
+            "mean": 0.0525273368328008,
+            "sample_count": 12
+          },
+          "checkpoint-20": {
+            "mean": 0.841880980861244,
+            "sample_count": 21
+          },
+          "checkpoint-40": {
+            "mean": 1.0,
+            "sample_count": 24
+          }
+        }
+      }
+    }
+  },
+  "sample_counts_per_prefix": {
+    "base": {
+      "3": 297
+    },
+    "checkpoint-20": {
+      "3": 297
+    },
+    "checkpoint-40": {
+      "3": 297
+    }
+  }
+}

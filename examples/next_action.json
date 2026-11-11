@@ -1,0 +1,17 @@
+{
+  "sample_id": "9aecc25b7d0e6a594e31746dbec887184c95a10750e462d7e7830cf60f3ce2f9",
+  "step_id": 4,
+  "task": "Go to https://github.com/. Find a Julia repository on GitHub that has been updated in the last 5 days and has at least 300 stars, and describe its primary function.",
+  "current_state": {
+    "screenshot": "images/9aecc25b7d0e6a594e31746dbec887184c95a10750e462d7e7830cf60f3ce2f9/screenshot_004.png",
+    "width": 512,
+    "height": 720
+  },
+  "previous_actions": [
+    "goto(url='https://github.com/')",
+    "mouse_click(x=27.65432098765432, y=22.129527991218442, button='left')",
+    "mouse_click(x=202.2716049382716, y=351.7014270032931, button='left')"
+  ],
+  "target_action": "keyboard_type(text='Julia')",
+  "action_name": "keyboard_type"
+}

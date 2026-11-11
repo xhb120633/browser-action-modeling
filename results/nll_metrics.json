@@ -1,0 +1,42 @@
+{
+  "split": "val",
+  "primary_metric": "mean_action_token_nll",
+  "target": "Recorded next action with its assistant end token",
+  "checkpoints": {
+    "checkpoint-20": "runs/trajectory-epoch1-160/checkpoint-20",
+    "checkpoint-40": "runs/trajectory-epoch1-160/checkpoint-40"
+  },
+  "elapsed_seconds": 165.62613879999844,
+  "models": {
+    "base": {
+      "num_trajectories": 20,
+      "num_actions": 297,
+      "total_tokens": 11631,
+      "nll_sum": 17527.420078602576,
+      "token_mean_nll": 1.5069572761243724,
+      "mean_action_nll_sum": 59.014882419537294,
+      "mean_action_token_nll": 1.4855785323532114,
+      "mean_trajectory_token_nll": 1.8305871399452631
+    },
+    "checkpoint-20": {
+      "num_trajectories": 20,
+      "num_actions": 297,
+      "total_tokens": 11631,
+      "nll_sum": 14834.166601756224,
+      "token_mean_nll": 1.2753990715979902,
+      "mean_action_nll_sum": 49.9466888948021,
+      "mean_action_token_nll": 1.152204808325045,
+      "mean_trajectory_token_nll": 1.3958465949327192
+    },
+    "checkpoint-40": {
+      "num_trajectories": 20,
+      "num_actions": 297,
+      "total_tokens": 11631,
+      "nll_sum": 14468.182195197953,
+      "token_mean_nll": 1.2439327826668345,
+      "mean_action_nll_sum": 48.714418165649676,
+      "mean_action_token_nll": 1.101484866299086,
+      "mean_trajectory_token_nll": 1.3290736802385392
+    }
+  }
+}

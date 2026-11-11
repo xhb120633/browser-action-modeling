@@ -1,0 +1,32 @@
+{
+  "dataset": "allenai/MolmoWeb-HumanTrajs",
+  "revision": "4ab9e1862289641681c7058b09c0901844b217a8",
+  "selection": "200 trajectories from row groups 0, 1, 3, and 4 in the first train shard",
+  "trajectories": 200,
+  "parts": [
+    {
+      "file": "part-00000.parquet",
+      "source_file": "datasets/allenai/MolmoWeb-HumanTrajs@4ab9e1862289641681c7058b09c0901844b217a8/data/train-00000.parquet",
+      "row_group": 0,
+      "trajectories": 50
+    },
+    {
+      "file": "part-00001.parquet",
+      "source_file": "datasets/allenai/MolmoWeb-HumanTrajs@4ab9e1862289641681c7058b09c0901844b217a8/data/train-00000.parquet",
+      "row_group": 1,
+      "trajectories": 50
+    },
+    {
+      "file": "part-00003.parquet",
+      "source_file": "datasets/allenai/MolmoWeb-HumanTrajs@4ab9e1862289641681c7058b09c0901844b217a8/data/train-00000.parquet",
+      "row_group": 3,
+      "trajectories": 50
+    },
+    {
+      "file": "part-00004.parquet",
+      "source_file": "datasets/allenai/MolmoWeb-HumanTrajs@4ab9e1862289641681c7058b09c0901844b217a8/data/train-00000.parquet",
+      "row_group": 4,
+      "trajectories": 50
+    }
+  ]
+}

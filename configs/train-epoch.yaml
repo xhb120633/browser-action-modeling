@@ -1,0 +1,64 @@
+model:
+  path: ../models/Qwen2.5-VL-3B-Instruct
+  torch_dtype: bfloat16
+  attn_implementation: sdpa
+  min_image_tokens: 64
+  max_image_tokens: 512
+  use_fast_processor: false
+data:
+  directory: ../data/processed
+  unit: trajectory
+  train_samples: 0
+  val_samples: 4
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  task_type: CAUSAL_LM
+training:
+  output_dir: ../runs/trajectory-epoch1-160
+  seed: 42
+  max_steps: -1
+  num_train_epochs: 1
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002
+  optim: adamw_torch
+  lr_scheduler_type: cosine
+  bf16: true
+  gradient_checkpointing: true
+  gradient_checkpointing_kwargs:
+    use_reentrant: false
+  dataloader_num_workers: 0
+  logging_steps: 1
+  save_strategy: steps
+  report_to: []
+  remove_unused_columns: false
+  dataset_kwargs:
+    skip_prepare_dataset: true
+  max_length: null
+  packing: false
+  prediction_loss_only: true
+  label_names:
+  - labels
+  average_tokens_across_devices: false
+  warmup_steps: 3
+  save_steps: 20
+inference:
+  adapter_path: ../runs/trajectory-epoch1-160
+  compare_base: true
+  max_new_tokens: 256
+  do_sample: false
+evaluation:
+  split: val
+  output_dir: ../runs/trajectory-epoch1-160-eval
+  max_examples: 12
+  position_tolerance: 0.05
+  scroll_tolerance: 0.25
+  scroll_deadzone_pixels: 1.0
