@@ -34,8 +34,10 @@ I chose Qwen2.5-VL-3B-Instruct for screenshot input and local LoRA training. Giv
 | Joint match ↑ | 7.5% | 14.6% | **19.6%** |
 | At least one joint match in three draws ↑ | 12.8% | 24.9% | **28.6%** |
 
-![Action type accuracy and scroll direction accuracy across the three models](figures/validation.png)
+![Action type accuracy, position error, scroll direction accuracy, and scroll magnitude MSE across the three models](figures/validation.png)
 
-At update 40, scroll direction accuracy rose from 42.7% to 75.2% on 39 shared scroll prefixes. Scroll magnitude MSE rose from 0.099 to 0.117. Mean normalized click distance remained 0.365 on 44 shared click prefixes, while click type accuracy fell. Message exact-match gains came from the `[EXIT]` action. Three URL jumps and two drags had zero type hits for all models and are omitted from the plot. The test split remains held out.
+Counts show all validation prefixes in panel A and common scorable prefixes in panels B, C, and D. All three models had zero type hits for URL jumps and drags.
+
+At update 40, scroll direction accuracy rose from 42.7% to 75.2% on 39 shared plain-scroll prefixes. On the same prefixes, scroll magnitude MSE rose from 0.099 to 0.117. Mean normalized click distance remained 0.365 on 44 shared click prefixes, while click type accuracy fell. Message exact-match gains came from the `[EXIT]` action. The test split remains held out.
 
 AI assistance. I used Codex to help implement, debug, and document the pipeline.
